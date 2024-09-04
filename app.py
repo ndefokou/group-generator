@@ -18,7 +18,6 @@ class Student(db.Model):
         self.gender = gender
         
 
-
 @app.route('/')
 def index():
     students = Student.query.all()
